@@ -1,0 +1,167 @@
+@import "./fonts.css";
+
+
+/* General */
+
+:root {
+    --red: #d20117;
+}
+
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Scroll Bars */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: black;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: red;
+}
+
+.section-heading {
+    font-family: "Befindisa";
+    letter-spacing: 2px;
+    font-size: 80px;
+    text-align: center;
+}
+
+
+
+/* LANDING SECTION  */
+
+.landing-section {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../assets/images/backgrounds/home-landing-section.jpg");
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    top: 0;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 80px;
+    font-family: "Befindisa";
+    letter-spacing: 3px;
+}
+
+.logo>div {
+    width: 30px;
+    height: 2px;
+    margin: 0 10px;
+    background-color: black;
+}
+
+.landing-details {
+    position: relative;
+    top: 50%;
+    left: 0;
+    text-align: center;
+    width: 40%;
+    transform: translateY(-50%);
+}
+
+.landing-details h1 {
+    margin: 0;
+    font-family: "Befindisa";
+    font-size: 80px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.landing-details h2 {
+    margin: 0;
+    font-family: "Modern No 20";
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+.landing-details a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 8px 25px;
+    font-family: "Modern No 20";
+    letter-spacing: 2px;
+    font-size: 22px;
+    transition: 0.5s;
+    border: 2px solid transparent;
+}
+
+.landing-details a:hover {
+    color: black;
+    background-color: transparent;
+    border: 2px solid black;;
+}
+
+
+
+
+
+
+/* OVERVIEW SECTION */
+
+.overview-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    padding: 0 7.5%;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.overview-grid > div {
+    height: 30vh;
+    background-position: center center;
+    background-size: cover;
+    background-image: url("../assets/images/Overview-Grid/1.jpg");
+    background-repeat: no-repeat;
+}
+
+.overview-cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.overview-grid > div p {
+    font-family: "Modern No 20";
+    color: white;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
