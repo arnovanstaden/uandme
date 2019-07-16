@@ -47,3 +47,14 @@ for (i = 0; i < acc.length; i++) {
     } 
   });
 }
+
+
+
+
+// Radio Button Check RSVP Form
+
+$('input:radio[name="Diet Restrictions"]').change(function(){
+    if($(this).val() == 'Yes'){
+       $(".diet-input input:nth-child(4)").fadeIn(1000);
+    }
+});
