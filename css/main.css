@@ -42,6 +42,7 @@ html {
     letter-spacing: 2px;
     font-size: 80px;
     text-align: center;
+    padding-top: 20px;
 }
 
 
@@ -173,11 +174,11 @@ html {
 }
 
 .overview-cover:hover {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
     font-size: 40px;
 }
 
-.overview-cover:hover p{
+.overview-cover:hover p {
     font-size: 38px;
 }
 
@@ -197,7 +198,7 @@ html {
     grid-area: 2/1/4/3;
 }
 
-.overview-grid>div:last-child{
+.overview-grid>div:last-child {
     grid-area: 4/3/5/5;
 }
 
@@ -236,6 +237,38 @@ html {
     background-image: url("../assets/images/Overview-Grid/4-2.jpg");
 }
 
+.overview-grid>div:nth-child(5) {
+    background-image: url("../assets/images/Overview-Grid/5-1.jpg");
+}
+
+.overview-grid>div:nth-child(5):hover {
+    background-image: url("../assets/images/Overview-Grid/5-2.jpg");
+}
+
+.overview-grid>div:nth-child(6) {
+    background-image: url("../assets/images/Overview-Grid/6-1.jpg");
+}
+
+.overview-grid>div:nth-child(6):hover {
+    background-image: url("../assets/images/Overview-Grid/6-2.jpg");
+}
+
+.overview-grid>div:nth-child(7) {
+    background-image: url("../assets/images/Overview-Grid/7-1.jpg");
+}
+
+.overview-grid>div:nth-child(7):hover {
+    background-image: url("../assets/images/Overview-Grid/7-2.jpg");
+}
+
+.overview-grid>div:nth-child(8) {
+    background-image: url("../assets/images/Overview-Grid/8-1.jpg");
+}
+
+.overview-grid>div:nth-child(8):hover {
+    background-image: url("../assets/images/Overview-Grid/8-2.jpg");
+}
+
 
 
 /* WEDDING DETAILS SECTION */
@@ -264,13 +297,17 @@ html {
 }
 
 .details-text {
-
     padding: 7.5% 0;
     text-align: center;
 }
 
 .details-text * {
     margin: 0;
+}
+
+.details-text p {
+    font-family: "Modern No 20";
+    font-size: 34px;
 }
 
 .details-text h1 {
@@ -314,7 +351,7 @@ html {
 
 .details-text>div {
     width: 20%;
-    height: 1px;
+    height: 2px;
     background-color: var(--grey);
     margin: 20px auto;
 }
@@ -334,7 +371,7 @@ html {
     padding-bottom: 10%;
 }
 
-.story-section .section-heading{
+.story-section .section-heading {
     margin: 10px 0 0 0;
     font-size: 60px;
 }
@@ -367,7 +404,6 @@ html {
 .venue-section {
     display: grid;
     grid-template-columns: 65% 35%;
-    padding-bottom: 10%;
 }
 
 .venue-section .section-heading {
@@ -425,7 +461,7 @@ html {
 }
 
 .venue-text a {
-    border: 1px solid black;
+    border: 2px solid black;
     font-family: "Modern No 20";
     text-align: center;
     padding: 8px 20px;
@@ -444,13 +480,61 @@ html {
 }
 
 
+/* MAP SECTION */
+
+.map-section iframe {
+    height: 50vh;
+    border: 5px solid black;
+    width: calc(100% - 20px);
+
+}
 
 
+/* Party Section */
+
+.party-grid {
+    display: grid;
+    grid-template-columns: 35% 30% 35%;
+    padding-bottom: 10%;
+}
+
+.party-grid>div:nth-child(2) {
+    background-image: url("../assets/images/Sections/party-section.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
 
 
+.party-grid>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
+.party-grid>div * {
+    margin: 0;
+}
 
+.party-grid h2 {
+    font-family: "Moderno No 20";
+    color: var(--grey);
+}
 
+.party-grid h3 {
+    font-family: "Befindisa";
+    font-size: 40px;
+    margin-top: 15px;
+}
+
+.party-grid>div>div {
+    width: 25%;
+    background-color: var(--grey);
+    height: 1px;
+    margin: 30px 0;
+}
 
 
 
@@ -463,23 +547,29 @@ html {
 
 /* STAY SECTION */
 
+.stay-section {
+    z-index: 10;
+    background-color: white;
+}
+
 .stay-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-row-gap: 20px;
     grid-column-gap: 20px;
-    padding: 0 10%;
+    padding: 0 5%;
 }
 
 .stay-section {
     padding-bottom: 5%;
 }
 
-.stay-grid > div {
-    height: 40vh;
+.stay-grid>div {
+    height: 50vh;
     background-position: center;
     background-size: cover;
+    transition: 0.5s;
+    transition: 0.5s;
 }
 
 .stay-cover {
@@ -488,28 +578,289 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
     flex-direction: column;
+    transition: 0.5s;
 }
 
 .stay-cover>div {
     width: 20%;
     height: 1px;
     background-color: white;
+    margin: 10px 0;
+
 }
 
-.stay-grid > div:nth-child(1) {
+.stay-grid>div:nth-child(1) {
     background-image: url("../assets/images/accommodation/rosemary.jpg");
 }
 
-.stay-grid > div:nth-child(2) {
+.stay-grid>div:nth-child(2) {
     background-image: url("../assets/images/accommodation/guesthouse56.jpg");
 }
 
-.stay-grid > div:nth-child(3) {
-    background-image: url("../assets/images/accommodation/silver-fig.jfif");
+.stay-grid>div:nth-child(3) {
+    background-image: url("../assets/images/accommodation/silver-fig.jpg");
 }
 
-.stay-grid > div:nth-child(4) {
+.stay-grid>div:nth-child(4) {
     background-image: url("../assets/images/accommodation/mooiplaatsie.jpg");
+}
+
+.stay-grid>div:nth-child(5) {
+    background-image: url("../assets/images/accommodation/pearl.jpg");
+}
+
+.stay-grid>div:nth-child(6) {
+    background-image: url("../assets/images/accommodation/bullforgs.jpg");
+}
+
+.stay-grid>div:nth-child(1):hover {
+    background-image: url("../assets/images/accommodation/rosemary-2.jpg");
+}
+
+.stay-grid>div:nth-child(2):hover {
+    background-image: url("../assets/images/accommodation/guesthouse56-2.jpg");
+}
+
+.stay-grid>div:nth-child(3):hover {
+    background-image: url("../assets/images/accommodation/silver-fig-2.jpg");
+}
+
+.stay-grid>div:nth-child(4):hover {
+    background-image: url("../assets/images/accommodation/mooiplaatsie-2.jpg");
+}
+
+.stay-grid>div:nth-child(5):hover {
+    background-image: url("../assets/images/accommodation/pearl-2.jpg");
+}
+
+.stay-grid>div:nth-child(6):hover {
+    background-image: url("../assets/images/accommodation/bullforgs-2.jpg");
+}
+
+.stay-grid>div:hover {
+    box-shadow: 6px 6px 4px #6b6b6b;
+    transform: scale(1.01);
+}
+
+.stay-cover:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.stay-grid h1 {
+    color: white;
+    font-family: "Modern No 20";
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 26px;
+    padding:  0 5%;
+    text-align: center;
+    margin: 0;
+}
+
+.stay-cover a:nth-child(3), .stay-cover a:nth-child(4) {
+    color: white;
+    text-decoration: none;
+    padding: 0 5%;
+    font-family: "Modern No 20";
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.stay-cover a:nth-child(5) {
+    color: white;
+    border: 2px solid white;
+    padding: 5px 15px;
+    text-decoration: none;
+    font-family: "Modern No 20";
+    font-size: 20px;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.stay-cover a:nth-child(5):hover {
+    background-color: white;
+    color: black;
+}
+
+/* FAQ Section */
+
+.faq-grid {
+    padding: 2% 10%;
+}
+
+.accordion {
+    color: black;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    background-color: transparent;
+    text-align: center;
+    font-family: "Modern No 20";
+    font-size: 30px;
+}
+
+.accordion span {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.active,
+.accordion:hover span {
+    opacity: 1;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-family: "Modern No 20";
+    font-size: 22px;
+    text-align: center;
+    color: var(--grey);
+    line-height: 1.4;
+    letter-spacing: 1px;
+}
+
+.faq-grid .divider {
+    width: 25%;
+    height: 1px;
+    background-color: var(--grey);
+    margin: 20px auto;
+}
+
+.panel .email-link {
+    text-decoration: underline;
+    color: black;
+}
+
+.panel .panel-link {
+    display: inline-block;
+    background-color: black;
+    padding: 8px 20px;
+    color: white;
+    text-decoration: none;
+    border: 2px solid black;
+    transition: 0.5s;
+}
+
+.panel .panel-link:hover {
+    background-color: transparent;
+    color: black;
+}
+
+
+
+/* SCHEDULE SECTION */
+
+
+.schedule-section {
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+
+.schedule-section .section-heading {
+    margin-top: 0;
+}
+
+.schedule-section>div:nth-child(1) {
+    background-image: url("../assets/images/Sections/schedule-section.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.schedule-section >div:nth-child(2) {
+    position: relative;
+}
+
+
+.entries {
+    width: calc(100% - 80px);
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+    left: -5px;
+}
+
+.entries .entry {
+    width: calc(50% - 80px);
+    float: left;
+    padding: 20px;
+    clear: both;
+    text-align: right;
+}
+
+.entries .entry:not(:first-child) {
+    margin-top: -60px;
+}
+
+.entries .entry .title {
+    font-size: 60px;
+    margin-bottom: 0;
+    position: relative;
+    color: black;
+    font-family: "Befindisa"
+}
+
+.entries .entry .title:before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 4px solid #fff;
+    background-color: #1d1d1d;
+    border-radius: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -73px;
+    z-index: 1000;
+}
+
+.entries .entry .title.big:before {
+    width: 24px;
+    height: 24px;
+    transform: translate(8px, -50%);
+}
+
+.entries .entry .body {
+    color: #aaa;
+}
+
+.entries .entry .body p {
+    line-height: 1.4em;
+    margin: 0;
+    font-family: "Modern No 20";
+    color: var(--grey);
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.entries .entry:nth-child(2n) {
+    text-align: left;
+    float: right;
+}
+
+.entries .entry:nth-child(2n) .title:before {
+    left: -63px;
+}
+
+.entries .entry:nth-child(2n) .title.big:before {
+    transform: translate(-8px, -50%);
+}
+
+.middle-line {
+    width: 4px;
+    background-color: black;
+    height: 85%;
+    position: absolute;
+    left: calc(50% - 2px);
+    z-index: 1;
 }
