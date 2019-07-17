@@ -146,12 +146,11 @@ html {
 }
 
 .overview-grid>div {
-    /* height: 30vh; */
     background-position: center center;
     background-size: cover;
-    background-image: url("../assets/images/Sections/details-section.jpg");
     background-repeat: no-repeat;
     transition: 0.5s;
+    background-color: black;
 }
 
 .overview-grid>div:hover {
@@ -747,17 +746,15 @@ html {
     font-family: "Modern No 20";
     font-weight: 500;
     font-size: 30px;
+    
 }
 
 .accordion span {
     opacity: 0;
     transition: 0.5s;
+    display: none;
 }
 
-.active,
-.accordion:hover span {
-    opacity: 1;
-}
 
 .panel {
     padding: 0 18px;
