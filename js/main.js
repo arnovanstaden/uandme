@@ -56,6 +56,8 @@ for (i = 0; i < acc.length; i++) {
 $('input:radio[name="Diet Restrictions"]').change(function () {
     if ($(this).val() == 'Yes') {
         $(".diet-input input:nth-child(4)").fadeIn(1000);
+    } else {
+        $(".diet-input input:nth-child(4)").fadeOut(1000);
     }
 });
 
@@ -73,4 +75,25 @@ $(".modal-close").click( function(){
 $(".stay-details-button").click(function() {
     $(this).next().css("max-height", "100%");
     $(this).fadeOut(500);
+});
+
+
+// Photo Gallery
+
+$(".all-photos p").click(function() {
+    $(".column >div").fadeIn(1500);
+    $(".all-photos").fadeOut(500);
+});
+
+$(".column img").click(function() {
+    var image = $(this).attr("src");
+    $("html").css("overflow-y","hidden");
+    $(".photo-modal").fadeIn(1000);
+    $(".photo-modal div").css("background-image", "url('" + image + "')");
+
+});
+
+$(".photo-modal i").click(function() {
+    $("html").css("overflow-y","scroll");
+    $(".photo-modal").fadeOut(1000);
 });

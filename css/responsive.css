@@ -33,6 +33,13 @@
 }
 
 
+@media screen and (max-width:900px) {
+    .photo-grid-big {
+        grid-template-columns: 1fr;
+    }
+}
+
+
 @media screen and (max-width:800px) {
 
     /* Landing Section */
@@ -219,10 +226,6 @@
         grid-template-rows: 1fr 0.5fr;
     }
 
-
-
-
-
-
-
 }
+
+

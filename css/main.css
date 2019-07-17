@@ -659,12 +659,13 @@ html {
     letter-spacing: 2px;
     text-transform: uppercase;
     font-size: 26px;
-    padding:  0 5%;
+    padding: 0 5%;
     text-align: center;
     margin: 0;
 }
 
-.stay-details a:nth-child(2), .stay-details a:nth-child(3) {
+.stay-details a:nth-child(2),
+.stay-details a:nth-child(3) {
     color: white;
     text-decoration: none;
     padding: 0 5%;
@@ -689,7 +690,7 @@ html {
     color: black;
 }
 
-.stay-details-button p{
+.stay-details-button p {
     color: white;
     border: 2px solid white;
     padding: 5px 15px;
@@ -824,7 +825,7 @@ html {
 }
 
 
-.schedule-section >div:nth-child(2) {
+.schedule-section>div:nth-child(2) {
     position: relative;
 }
 
@@ -929,19 +930,19 @@ html {
     font-size: 60px;
 }
 
-.contact-section >div:nth-child(2) iframe {
+.contact-section>div:nth-child(2) iframe {
     height: 100%;
     width: 100%;
     border: none;
 }
 
-.contact-section >div:nth-child(1) {
+.contact-section>div:nth-child(1) {
     text-align: center;
 }
 
 .contact-email {
     padding: 40px 0;
-  
+
 }
 
 .contact-email a {
@@ -956,7 +957,7 @@ html {
 
 .contact-email i {
     padding-right: 10px;
-} 
+}
 
 .rsvp-form {
     padding: 5% 10%;
@@ -968,7 +969,7 @@ html {
     text-align: center;
 }
 
-.rsvp-form input{
+.rsvp-form input {
     color: black;
     border: 2px solid black;
     padding: 10px 5px;
@@ -992,7 +993,8 @@ html {
     color: rgba(25, 25, 25, 0.8);
 }
 
-.diet-input input:nth-child(1), .diet-input input:nth-child(2) {
+.diet-input input:nth-child(1),
+.diet-input input:nth-child(2) {
     margin: 0 10px !important;
     font-size: 20px;
     color: black;
@@ -1002,7 +1004,7 @@ html {
 
 .diet-input input:nth-child(4) {
     display: none;
-} 
+}
 
 .submit-button {
     background-color: black;
@@ -1063,8 +1065,110 @@ html {
     margin: 0;
 }
 
-.rsvp-modal h2{
+.rsvp-modal h2 {
     font-family: "Modern No 20";
     font-size: 24px;
     margin: 0;
+}
+
+
+
+
+/* PHoto Gallery Section */
+
+.photo-grid-big {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 2%;
+}
+
+.photo-grid-big .section-heading {
+    font-size: 60px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: 48%;
+    max-width: 48%;
+    padding: 0 0.5%;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    cursor: pointer;
+}
+
+.column img:hover {
+    opacity: 0.;
+}
+
+.column >div {
+    display: none;
+}
+
+.all-photos {
+    text-align: center;
+}
+
+.all-photos p {
+    border: 2px solid black;
+    font-size: 24px;
+    padding: 5px 20px;
+    font-family: "Modern No 20";
+    display: inline-block;
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.all-photos p:hover {
+    background-color: transparent;
+    color: black;
+}
+
+.photo-modal {
+    position: fixed;
+    z-index: 30;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow: hidden;
+    display: none;
+}
+
+.photo-modal i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 22px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.photo-modal i:hover {
+    transform: scale(1.4);
+}
+
+.photo-modal div {
+    height: 90%;
+    width: 90%;
+    position: relative;
+    top: 5%;
+    left: 5%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
