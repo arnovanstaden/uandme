@@ -1,0 +1,228 @@
+@media screen and (max-width:1200px) {
+
+    /* Story Section */
+
+    .story-text {
+        padding: 5% 15%
+    }
+
+
+
+    /* Party Section */
+
+    .party-grid h3 {
+        font-size: 36px;
+    }
+
+
+    /* FAQ Section */
+
+    .accordion {
+        font-size: 26px;
+    }
+
+    /* Stay Section */
+
+    .stay-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .stay-grid>div {
+        height: 40vh;
+    }
+}
+
+
+@media screen and (max-width:800px) {
+
+    /* Landing Section */
+
+    .landing-details {
+        display: none;
+    }
+
+
+
+    /* Overview Section */
+
+    .overview-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 25vh);
+    }
+
+    .overview-cover {
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .overview-grid>div:nth-child(2) {
+        grid-area: 2/1/3/2;
+    }
+
+    .overview-grid>div:nth-child(3) {
+        grid-area: 1/2/3/4;
+    }
+
+    .overview-grid>div:nth-child(4) {
+        grid-area: 3/1/4/3;
+    }
+
+    .overview-grid>div:nth-child(5) {
+        grid-area: 3/3/4/4
+    }
+
+    .overview-grid>div:nth-child(6) {
+        grid-area: 4/3/5/4
+    }
+
+    .overview-grid>div:last-child {
+        grid-area: 5/1/6/4;
+    }
+
+
+    /* Stay Section */
+
+    .stay-grid>div {
+        height: 30vh;
+    }
+
+}
+
+
+
+@media screen and (max-width:600px) {
+
+    .section-heading {
+        padding: 0 5%;
+    }
+
+    /* Overview Section */
+
+    .overview-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 25vh);
+    }
+
+    .overview-grid>div:nth-child(1) {
+        grid-area: 1/1/2/2;
+    }
+
+    .overview-grid>div:nth-child(2) {
+        grid-area: 1/2/2/3;
+    }
+
+    .overview-grid>div:nth-child(3) {
+        grid-area: 2/1/3/3;
+    }
+
+    .overview-grid>div:nth-child(4) {
+        grid-area: 4/1/5/3;
+    }
+
+    .overview-grid>div:nth-child(5) {
+        grid-area: 3/1/4/2;
+    }
+
+    .overview-grid>div:nth-child(6) {
+        grid-area: 3/2/4/3;
+    }
+
+    .overview-grid>div:nth-child(7) {
+        grid-area: 5/1/6/2;
+    }
+
+    .overview-grid>div:nth-child(8) {
+        grid-area: 5/2/6/3;
+    }
+
+    .overview-grid>div:last-child {
+        grid-area: 6/1/7/3;
+    }
+
+
+
+    /* Wedding Details */
+
+    .wedding-details {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+
+    /* Story Section */
+
+    .story-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .story-section>div:nth-child(1) {
+        grid-area: 2/1/3/2;
+    }
+
+
+    /* Venue Section */
+
+
+    .venue-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.6fr;
+    }
+
+    /* Party Section */
+
+    .party-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .party-grid>div:nth-child(2) {
+        background-position: top center;
+    }
+
+    .party-grid>div:nth-child(3) {
+        padding-top: 40px;
+    }
+
+
+    /* Schedule Section */
+
+    .schedule-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.5fr;
+    }
+
+    .schedule-section>div:nth-child(1) {
+        grid-area: 2/1/3/2;
+    }
+
+    /* Stay Section */
+
+    .stay-grid {
+        grid-template-columns: 1fr;
+        padding: 0 10%;
+        grid-row-gap: 50px;
+    }
+
+    .stay-grid>div {
+        height: 30vh;
+    }
+
+
+    /* Contact Section */
+
+    .contact-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.5fr;
+    }
+
+
+
+
+
+
+
+}

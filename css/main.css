@@ -302,6 +302,7 @@ html {
 
 .wedding-details>div:nth-child(1) {
     position: relative;
+    padding: 0 5%;
 }
 
 .details-text {
@@ -393,7 +394,7 @@ html {
 }
 
 .story-text {
-    padding: 5% 25%;
+    padding: 5% 20%;
 }
 
 .story-text p {
@@ -518,7 +519,7 @@ html {
 }
 
 .party-grid h2 {
-    font-family: "Moderno No 20";
+    font-family: "Modern No 20";
     color: var(--grey);
 }
 
@@ -526,6 +527,9 @@ html {
     font-family: "Befindisa";
     font-size: 40px;
     margin-top: 15px;
+    font-weight: 600;
+    text-align: center;
+    padding: 0 5%;
 }
 
 .party-grid>div>div {
@@ -584,7 +588,7 @@ html {
     transition: 0.5s;
 }
 
-.stay-cover>div {
+.stay-details>div {
     width: 20%;
     height: 1px;
     background-color: white;
@@ -660,7 +664,7 @@ html {
     margin: 0;
 }
 
-.stay-cover a:nth-child(3), .stay-cover a:nth-child(4) {
+.stay-details a:nth-child(2), .stay-details a:nth-child(3) {
     color: white;
     text-decoration: none;
     padding: 0 5%;
@@ -669,7 +673,7 @@ html {
     margin-bottom: 5px;
 }
 
-.stay-cover a:nth-child(5) {
+.stay-details a:nth-child(4) {
     color: white;
     border: 2px solid white;
     padding: 5px 15px;
@@ -680,10 +684,48 @@ html {
     transition: 0.5s;
 }
 
-.stay-cover a:nth-child(5):hover {
+.stay-details a:nth-child(4):hover {
     background-color: white;
     color: black;
 }
+
+.stay-details-button p{
+    color: white;
+    border: 2px solid white;
+    padding: 5px 15px;
+    text-decoration: none;
+    font-family: "Modern No 20";
+    font-size: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.stay-details-button p:hover {
+    background-color: white;
+    color: black;
+}
+
+.stay-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* display: none; */
+    transition: 0.5s;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+
+
+
+
+
+
+
+
 
 /* FAQ Section */
 
@@ -702,6 +744,7 @@ html {
     background-color: transparent;
     text-align: center;
     font-family: "Modern No 20";
+    font-weight: 500;
     font-size: 30px;
 }
 
@@ -811,7 +854,8 @@ html {
     margin-bottom: 0;
     position: relative;
     color: black;
-    font-family: "Befindisa"
+    font-family: "Befindisa";
+    font-weight: 600;
 }
 
 .entries .entry .title:before {
@@ -897,6 +941,7 @@ html {
 
 .contact-email {
     padding: 40px 0;
+  
 }
 
 .contact-email a {
@@ -905,6 +950,8 @@ html {
     font-family: "Modern No 20";
     text-decoration: none;
     font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 .contact-email i {
@@ -970,4 +1017,54 @@ html {
 .submit-button:hover {
     background-color: transparent;
     color: black !important;
+}
+
+.rsvp-form h2 {
+    font-family: "Modern No 20";
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+}
+
+.rsvp-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border: 5px solid black;
+    position: fixed;
+    z-index: 20;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2.5% 5%;
+    display: none;
+}
+
+.rsvp-modal i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.rsvp-modal i:hover {
+    transform: scale(1.4);
+}
+
+.rsvp-modal h1 {
+    font-family: "Befindisa";
+    font-size: 70px;
+    margin: 0;
+}
+
+.rsvp-modal h2{
+    font-family: "Modern No 20";
+    font-size: 24px;
+    margin: 0;
 }
