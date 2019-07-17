@@ -48,6 +48,10 @@
         display: none;
     }
 
+    .landing-section {
+        background-position: 62.5% 50%;
+    }
+
 
 
     /* Overview Section */
@@ -91,6 +95,16 @@
 
     .stay-grid>div {
         height: 30vh;
+    }
+
+    /* FAQ Section */
+
+    .faq-grid {
+        padding: 0;
+    }
+
+    .accordion {
+        padding: 0 5%;
     }
 
 }

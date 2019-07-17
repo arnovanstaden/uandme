@@ -1012,8 +1012,8 @@ html {
     font-size: 22px !important;
     display: inline !important;
     cursor: pointer;
-    width: 20% !important;
     transition: 0.5s;
+    display: inline !important;
 }
 
 .submit-button:hover {
