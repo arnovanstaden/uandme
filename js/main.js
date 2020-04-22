@@ -1,11 +1,10 @@
 // Page Loader
 
-$(document).ready(function () {
+window.onload = (event) => {
     $(".page-loader").fadeOut(1000);
     $(".page").fadeIn(1000);
     $(".photo-section").fadeIn(1000);
-
-});
+};
 
 
 // COUNTDOWN TIMER
