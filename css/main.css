@@ -686,7 +686,7 @@ html {
     font-family: "Modern No 20";
     font-weight: 500;
     font-size: 30px;
-    
+
 }
 
 .accordion span {
@@ -897,7 +897,7 @@ html {
     padding-right: 0px;
 }
 
-.contact-section> div> p {
+.contact-section>div>p {
     padding: 2% 10%;
     font-family: "Modern No 20";
     text-decoration: none;
@@ -1024,6 +1024,10 @@ html {
 
 /* PHoto Gallery Section */
 
+.photo-section {
+    display: none;
+}
+
 .photo-grid-big {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1058,7 +1062,7 @@ html {
     opacity: 0.;
 }
 
-.column >div {
+.column>div {
     display: none;
 }
 
@@ -1145,36 +1149,43 @@ html {
 
 @keyframes lds-eclipse {
     0% {
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
     }
+
     50% {
-      -webkit-transform: rotate(180deg);
-      transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
     }
+
     100% {
-      -webkit-transform: rotate(360deg);
-      transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
-  @-webkit-keyframes lds-eclipse {
+}
+
+@-webkit-keyframes lds-eclipse {
     0% {
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
     }
+
     50% {
-      -webkit-transform: rotate(180deg);
-      transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
     }
+
     100% {
-      -webkit-transform: rotate(360deg);
-      transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
-  .lds-eclipse {
+}
+
+.lds-eclipse {
     position: relative;
-  }
-  .lds-eclipse div {
+}
+
+.lds-eclipse div {
     position: absolute;
     -webkit-animation: lds-eclipse 1.5s linear infinite;
     animation: lds-eclipse 1.5s linear infinite;
@@ -1186,10 +1197,11 @@ html {
     box-shadow: 0 4px 0 0 var(--grey);
     -webkit-transform-origin: 80px 82px;
     transform-origin: 80px 82px;
-  }
-  .lds-eclipse {
+}
+
+.lds-eclipse {
     width: 200px !important;
     height: 200px !important;
     -webkit-transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
     transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
-  }
+}

@@ -3,6 +3,8 @@
 $(document).ready(function () {
     $(".page-loader").fadeOut(1000);
     $(".page").fadeIn(1000);
+    $(".photo-section").fadeIn(1000);
+
 });
 
 
