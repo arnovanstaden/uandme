@@ -1025,11 +1025,6 @@ html {
 
 
 /* PHoto Gallery Section */
-
-.photo-section {
-    display: none;
-}
-
 .photo-grid-big {
     display: grid;
     grid-template-columns: 1fr 1fr;

@@ -1,12 +1,3 @@
-// Page Loader
-
-window.onload = (event) => {
-    $(".page-loader").fadeOut(1000);
-    $(".page").fadeIn(1000);
-    $(".photo-section").fadeIn(1000);
-};
-
-
 // COUNTDOWN TIMER
 
 // Set the date we're counting down to
@@ -89,12 +80,12 @@ $(".stay-details-button").click(function () {
 
 // Photo Gallery
 
-$(".all-photos p").click(function () {
+$(document).on("click", ".all-photos p", function () {
     $(".column >div").fadeIn(1500);
     $(".all-photos").fadeOut(500);
 });
 
-$(".column img").click(function () {
+$(document).on("click", ".column img", function () {
     var image = $(this).attr("src");
     $("html").css("overflow-y", "hidden");
     $(".photo-modal").fadeIn(1000);
@@ -102,7 +93,104 @@ $(".column img").click(function () {
 
 });
 
-$(".photo-modal i").click(function () {
+$(document).on("click", ".photo-modal i", function () {
     $("html").css("overflow-y", "scroll");
     $(".photo-modal").fadeOut(1000);
 });
+
+// Page Loader
+
+window.onload = (event) => {
+    $(".page-loader").fadeOut(1000);
+    $(".page").fadeIn(1000);
+    $(".photo-section").html(galleryContent)
+    $(".snazzy-map").html(`<iframe src="https://snazzymaps.com/embed/170028"></iframe>`);
+};
+
+
+
+
+
+// Photo Section Content
+const galleryContent = `
+<h1 class="section-heading">Photo Gallery</h1>
+<div class="photo-grid-big">
+    <div>
+        <h1 class="section-heading">Engagement Shoot</h1>
+        <div class="row">
+            <div class="column">
+                <img src="./assets/images/Gallery/Engagement/1.jpg">
+                <img src="./assets/images/Gallery/Engagement/3.jpg">
+                <div>
+                    <img src="./assets/images/Gallery/Engagement/5.jpg">
+                    <img src="./assets/images/Gallery/Engagement/7.jpg">
+                    <img src="./assets/images/Gallery/Engagement/11.jpg">
+                    <img src="./assets/images/Gallery/Engagement/12.jpg">
+                    <img src="./assets/images/Gallery/Engagement/10.jpg">
+                    <img src="./assets/images/Gallery/Engagement/13.jpg">
+                    <img src="./assets/images/Gallery/Engagement/15.jpg">
+                </div>
+            </div>
+            <div class="column">
+                <img src="./assets/images/Gallery/Engagement/2.jpg">
+                <img src="./assets/images/Gallery/Engagement/9.jpg">
+                <div>
+                    <img src="./assets/images/Gallery/Engagement/4.jpg">
+                    <img src="./assets/images/Gallery/Engagement/8.jpg">
+                    <img src="./assets/images/Gallery/Engagement/12.jpg">
+                    <img src="./assets/images/Gallery/Engagement/14.jpg">
+                    <img src="./assets/images/Gallery/Engagement/16.jpg">
+                    <img src="./assets/images/Gallery/Engagement/17.jpg">
+                    <img src="./assets/images/Gallery/Engagement/6.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h1 class="section-heading">Wedding Venue</h1>
+        <div class="row">
+            <div class="column">
+
+                <img src="./assets/images/Gallery/Venue/1.jpg">
+
+                <img src="./assets/images/Gallery/Venue/11.jpg">
+                <div>
+                    <img src="./assets/images/Gallery/Venue/5.jpg">
+                    <img src="./assets/images/Gallery/Venue/7.jpg">
+
+                    <img src="./assets/images/Gallery/Venue/3.jpg">
+                    <img src="./assets/images/Gallery/Venue/12.jpg">
+                    <img src="./assets/images/Gallery/Venue/13.jpg">
+
+                    <img src="./assets/images/Gallery/Venue/17.jpg">
+                </div>
+            </div>
+            <div class="column">
+                <img src="./assets/images/Gallery/Venue/12.jpg">
+                <img src="./assets/images/Gallery/Venue/2.jpg">
+                <div>
+                    <img src="./assets/images/Gallery/Venue/6.jpg">
+                    <img src="./assets/images/Gallery/Venue/8.jpg">
+                    <img src="./assets/images/Gallery/Venue/10.jpg">
+                    <img src="./assets/images/Gallery/Venue/4.jpg">
+                    <img src="./assets/images/Gallery/Venue/9.jpg">
+                    <img src="./assets/images/Gallery/Venue/14.jpg">
+                    <img src="./assets/images/Gallery/Venue/16.jpg">
+                    <img src="./assets/images/Gallery/Venue/18.jpg">
+                    <img src="./assets/images/Gallery/Venue/15.jpg">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="all-photos">
+    <p>View More</p>
+</div>
+
+<div class="photo-modal">
+    <i class="fal fa-times"></i>
+    <div>
+    </div>
+</div>`
