@@ -87,6 +87,7 @@ $(document).on("click", ".all-photos p", function () {
 
 $(document).on("click", ".column img", function () {
     var image = $(this).attr("src");
+    console.log(image)
     $("html").css("overflow-y", "hidden");
     $(".photo-modal").fadeIn(1000);
     $(".photo-modal div").css("background-image", "url('" + image + "')");
@@ -190,7 +191,8 @@ const galleryContent = `
 </div>
 
 <div class="photo-modal">
-    <i class="fal fa-times"></i>
+    <i style="font-family:sans-serif;font-style:normal">&#10005;</i>
     <div>
     </div>
-</div>`
+</div>
+`
