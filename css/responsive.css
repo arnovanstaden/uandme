@@ -3,7 +3,7 @@
     /* Story Section */
 
     .story-text {
-        padding: 5% 15%
+        padding: 5% 10%
     }
 
 
@@ -50,6 +50,10 @@
 
     .landing-section {
         background-position: 62.5% 50%;
+    }
+
+    .dot {
+        font-weight: 500;;
     }
 
 

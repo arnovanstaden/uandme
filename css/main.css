@@ -150,12 +150,11 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     transition: 0.5s;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .overview-grid>div:hover {
-    background-image: url("../assets/images/Overview-Grid/2.jpg");
-    box-shadow: 6px 6px 4px #6b6b6b;
+    box-shadow: 10px 10px 8px #6b6b6b;
     transform: scale(1.01);
 }
 
@@ -166,14 +165,14 @@ html {
     text-align: center;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.55);
     cursor: pointer;
     transition: 0.5s;
     text-decoration: none
 }
 
 .overview-cover:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.85);
     font-size: 40px;
 }
 
@@ -207,73 +206,36 @@ html {
     background-image: url("../assets/images/Overview-Grid/1-1.jpg");
 }
 
-.overview-grid>div:nth-child(1):hover {
-    background-image: url("../assets/images/Overview-Grid/1-2.jpg");
-}
-
-
 .overview-grid>div:nth-child(2) {
     background-image: url("../assets/images/Overview-Grid/2-1.jpg");
-}
-
-.overview-grid>div:nth-child(2):hover {
-    background-image: url("../assets/images/Overview-Grid/2-2.jpg");
 }
 
 .overview-grid>div:nth-child(3) {
     background-image: url("../assets/images/Overview-Grid/3-1.jpg");
 }
 
-.overview-grid>div:nth-child(3):hover {
-    background-image: url("../assets/images/Overview-Grid/3-2.jpg");
-}
-
 .overview-grid>div:nth-child(4) {
     background-image: url("../assets/images/Overview-Grid/4-1.jpg");
-}
-
-.overview-grid>div:nth-child(4):hover {
-    background-image: url("../assets/images/Overview-Grid/4-2.jpg");
 }
 
 .overview-grid>div:nth-child(5) {
     background-image: url("../assets/images/Overview-Grid/5-1.jpg");
 }
 
-.overview-grid>div:nth-child(5):hover {
-    background-image: url("../assets/images/Overview-Grid/5-2.jpg");
-}
-
 .overview-grid>div:nth-child(6) {
     background-image: url("../assets/images/Overview-Grid/6-1.jpg");
-}
-
-.overview-grid>div:nth-child(6):hover {
-    background-image: url("../assets/images/Overview-Grid/6-2.jpg");
 }
 
 .overview-grid>div:nth-child(7) {
     background-image: url("../assets/images/Overview-Grid/7-1.jpg");
 }
 
-.overview-grid>div:nth-child(7):hover {
-    background-image: url("../assets/images/Overview-Grid/7-2.jpg");
-}
-
 .overview-grid>div:nth-child(8) {
     background-image: url("../assets/images/Overview-Grid/8-1.jpg");
 }
 
-.overview-grid>div:nth-child(8):hover {
-    background-image: url("../assets/images/Overview-Grid/8-2.jpg");
-}
-
 .overview-grid>div:nth-child(9) {
     background-image: url("../assets/images/Overview-Grid/9-1.jpg");
-}
-
-.overview-grid>div:nth-child(9):hover {
-    background-image: url("../assets/images/Overview-Grid/9-2.jpg");
 }
 
 
@@ -519,6 +481,8 @@ html {
 
 .party-grid h2 {
     font-family: "Modern No 20";
+    font-weight: 600;
+    letter-spacing: 0.5px;
     color: var(--grey);
 }
 
@@ -617,30 +581,6 @@ html {
 
 .stay-grid>div:nth-child(6) {
     background-image: url("../assets/images/accommodation/bullforgs.jpg");
-}
-
-.stay-grid>div:nth-child(1):hover {
-    background-image: url("../assets/images/accommodation/rosemary-2.jpg");
-}
-
-.stay-grid>div:nth-child(2):hover {
-    background-image: url("../assets/images/accommodation/guesthouse56-2.jpg");
-}
-
-.stay-grid>div:nth-child(3):hover {
-    background-image: url("../assets/images/accommodation/silver-fig-2.jpg");
-}
-
-.stay-grid>div:nth-child(4):hover {
-    background-image: url("../assets/images/accommodation/mooiplaatsie-2.jpg");
-}
-
-.stay-grid>div:nth-child(5):hover {
-    background-image: url("../assets/images/accommodation/pearl-2.jpg");
-}
-
-.stay-grid>div:nth-child(6):hover {
-    background-image: url("../assets/images/accommodation/bullforgs-2.jpg");
 }
 
 .stay-grid>div:hover {
@@ -950,14 +890,25 @@ html {
     font-size: 26px;
     font-weight: 600;
     letter-spacing: 1px;
+    padding: 0 10px;
 }
 
 .contact-email i {
-    padding-right: 10px;
+    padding-right: 0px;
+}
+
+.contact-section> div> p {
+    padding: 2% 10%;
+    font-family: "Modern No 20";
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 300;
 }
 
 .rsvp-form {
-    padding: 5% 10%;
+    padding: 5% 10% 0 10%;
+    margin: 0;
 }
 
 .rsvp-form form {
@@ -1169,3 +1120,76 @@ html {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+
+
+
+/* Page Loader */
+
+.page-loader {
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page {
+    display: none;
+}
+
+@keyframes lds-eclipse {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    50% {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes lds-eclipse {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    50% {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  .lds-eclipse {
+    position: relative;
+  }
+  .lds-eclipse div {
+    position: absolute;
+    -webkit-animation: lds-eclipse 1.5s linear infinite;
+    animation: lds-eclipse 1.5s linear infinite;
+    width: 160px;
+    height: 160px;
+    top: 20px;
+    left: 20px;
+    border-radius: 50%;
+    box-shadow: 0 4px 0 0 var(--grey);
+    -webkit-transform-origin: 80px 82px;
+    transform-origin: 80px 82px;
+  }
+  .lds-eclipse {
+    width: 200px !important;
+    height: 200px !important;
+    -webkit-transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+    transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+  }

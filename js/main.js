@@ -1,3 +1,11 @@
+// Page Loader
+
+$(document).ready(function(){
+    $(".page-loader").fadeOut(1000);
+    $(".page").fadeIn(1000);
+  });
+
+
 // COUNTDOWN TIMER
 
 // Set the date we're counting down to
